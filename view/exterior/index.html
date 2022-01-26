@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Noticias Transportistas</title>
+    <link rel="shortcut icon" href="../../img/icon_Castores.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/estiloAdmin.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+    <script type="text/javascript" src="../../js/fontawesome.js"></script>
+    <script>
+		window.onload = function ocultar(){
+			document.getElementById('Cargando').style.display = 'none';
+			document.getElementById('CargandoNoticias').style.display = 'none';
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row align-items-start">
+				<div class="col">
+				<img class="margLogo" src="../../img/Logo_Castores.png">
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Suscriptores
+						</center>
+					</a>
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Boletin informativo
+						</center>
+					</a>
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Videos
+						</center>
+					</a>
+				</div>
+				<div class="dropdown col margenEncabezado">
+				  <button class="btn dropdown-toggle " type="button" id="menudesplejable" data-bs-toggle="dropdown" aria-expanded="false">
+					<img class="margenAvatar" src="../../img/avatar_defaultash.png">
+				  </button>
+				  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menudesplejable">
+				    <li>
+						<a class="dropdown-item" href="../../index.html">
+							<button type="button" name="button" class="btn btn-danger margenBTNCS" data-toggle="tooltip" data-placement="right" title="Se cerrara la sesion actual y tendras que logearte de nuevo para entrar">
+								Cerrar Session
+							</button>
+						</a>
+				    </li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="estilo_linea">
+		<hr>
+	</div>
+	<main>
+		<section id="carrusel_fotos">
+			<div class="container">
+				<center>
+					<div class="margenCarrusel">
+						<div id="carrusel_ultimas_noticias" class="carousel slide" data-bs-ride="carousel">
+						  <div class="carousel-inner">
+					    	<div class="carousel-item active" data-bs-interval="10000">
+								<a href="noticias.html">
+							      <img src="../../img/noticiasT/2022-01-25rusi.jpg" class="d-block tamañoimgCarrusel" alt="noticias frescas">
+							      <div class="carousel-caption d-none d-md-block">
+							      	<h5 class="titular_carrusel">
+							      		Estas son las 5 claves para entender la escalada tensión entre Rusia y Ucrania 
+							      	</h5>
+							      	<p class="clave_carrusel">
+							      		Según Estados Unidos, hay más de 100 mil soldados de Rusia en las fronteras de Ucrania, lo que hace temer un ataque militar "inminente" en suelo ucraniano
+							      	 </p>
+							      </div>
+								</a>
+				    		</div>
+			    		    <div class="carousel-item">
+						      <a href="noticias.html">
+							      <img src="../../img/noticiasT/2022-01-25periodista.png" class="d-block tamañoimgCarrusel" alt="noticias frescas">
+							      <div class="carousel-caption d-none d-md-block">
+							      	<h5 class="titular_carrusel">
+							      		Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+							      	</h5>
+							      	<p class="clave_carrusel">
+							      		En lo que va de 2022 van tres periodistas asesinados, por lo que trabajadores del gremio en varios estados convocaron a protestas para exigir justicia
+							      	 </p>
+							      </div>
+								</a>
+						    </div>
+			    		    <div class="carousel-item">
+						      <a href="noticias.html">
+							      <img src="../../img/noticiasT/2022-01-24coches.jpg" class="d-block tamañoimgCarrusel" alt="noticias frescas">
+							      <div class="carousel-caption d-none d-md-block">
+							      	<h5 class="titular_carrusel">
+							      		Carlos Trejo reta a Adame por enfrentar a mujer: “Cobarde de porquería”, le dice
+							      	</h5>
+							      	<p class="clave_carrusel">
+							      		El investigador de fenómenos paranormales Carlos Trejo criticó que Alfredo Adame forcejeara con una mujer debido a un altercado vial.
+							      	 </p>
+							      </div>
+								</a>
+						    </div>
+						  </div>
+						  <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_ultimas_noticias" data-bs-slide="prev">
+						    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Previous</span>
+						  </button>
+						  <button class="carousel-control-next" type="button" data-bs-target="#carrusel_ultimas_noticias" data-bs-slide="next">
+						    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+						    <span class="visually-hidden">Next</span>
+						  </button>
+						</div>
+					</div>
+				</center>
+			</div>
+		</section>
+		<section id="principal">
+			<div class="estilo_linea_segunda">
+				<hr>
+			</div>
+			<div class="container">
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="1"><p class="titulo_Principal">Principales</p></td>
+							<td colspan="1"></td>
+							<td colspan="1"></td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a href="noticias.html">
+									<img class="imagen_principal" src="../../img/noticiasT/2022-01-25rusi.jpg" alt="noticias frescas">
+								</a>
+							</td>
+							<td colspan="1">
+								<a href="noticias.html">
+									<img class="img_secundaria" src="../../img/noticiasT/2022-01-25periodista.png" alt="noticias frescas">
+									<p class="titulo_secundario_noticias">
+										Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+									</p>
+									<p class="Entradilla_Secundario_noticias">
+										En lo que va de 2022 van tres periodistas asesinados, por lo que trabajadores del gremio en varios estados convocaron a protestas para exigir justicia
+									</p>
+								</a>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a href="noticias.html">
+									<p class="titulo_principal_noticias">
+										Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+									</p>
+								</a>
+							</td>
+							<td colspan="1">
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<a href="noticias.html">
+									<p class="Entradilla_principal_noticias">
+										En lo que va de 2022 van tres periodistas asesinados, por lo que trabajadores del gremio en varios estados convocaron a protestas para exigir justicia 
+									</p>
+								</a>
+							</td>
+							<td colspan="1"></td>
+						</tr>
+						<tr>
+							<td colspan="1">
+								<a href="noticias.html">
+									<img class="img_tercera" src="../../img/noticiasT/2022-01-24coches.jpg" alt="noticias frescas">
+								</a>
+							</td>
+							<td colspan="1">
+								<a href="noticias.html">
+									<p class="Titulo_tercero_noticias">
+										Carlos Trejo reta a Adame por enfrentar a mujer: “Cobarde de porquería”, le dice
+									</p>
+								</a>
+							</td>
+							<td colspan="1"></td>
+						</tr>
+						<tr>
+							<td colspan="1"></td>
+							<td colspan="1">
+								<a href="noticias.html">
+									<p class="Entradilla_tercera_noticias">
+										El investigador de fenómenos paranormales Carlos Trejo criticó que Alfredo Adame forcejeara con una mujer debido a un altercado vial.
+									</p>
+								</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section id="pie">
+			<div class="container">
+	 			<div class="redes">
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/facebook.png" alt="logo de facebook"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/github.png" alt="logo de github"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/linkedin.png" alt="logo de linkedin"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/medium.png" alt="logo de medium"></a>
+	 			</div>
+				<div class="parrafo">
+				  <p>© 2022 Grupo castores | Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/jquery-3.6.0.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/sweetalert.min.js"></script>
+</body>
+</html>

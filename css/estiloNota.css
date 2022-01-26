@@ -1,0 +1,171 @@
+.margLogo{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.container a{
+	color: #000;
+	text-decoration: none;
+}
+
+.margenEncabezado{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.estilo_linea{
+	color: #ee0606;
+	height: 12px;
+	background-color: #ee0606;
+	margin-bottom: 10px;
+}
+
+.margenCarrusel{
+	width: 100%;
+}
+
+.tamañoimgCarrusel{
+	width: 100%;
+	height: 223px;
+}
+
+.titular_carrusel{
+	font-size: 34px;
+	font-weight: bold;
+}
+
+.clave_carrusel{
+	font-size: 19px;
+}
+
+.margenAvatar{
+	width: 36px;
+	margin-inline: 10px;
+}
+
+.fotoImagen{
+	width: 95%;
+	margin-left: -4px;
+}
+
+.Titular_n{
+	font-size: 47px;
+	font-weight: bold;
+}
+
+.Entradilla_n{
+	font-size: 21px;
+}
+
+.Foto_titular{
+	width: 1024px;
+	height: 447px;
+}
+
+.Enca_Otras_historias{
+	align-items: center;
+	background-color: #ee0606;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	height: 54px;
+	justify-content: center;
+	text-align: center;
+	width: 91%;
+}
+
+.Text_Otras_historias{
+	font-size: 20px;
+	color: #fff;
+}
+
+.Fotos_Otras_historias{
+	width: 105px;
+	height: 71px;
+}
+
+.Titular_Otras_historias{
+	font-weight: bold;
+}
+
+.Cuerpo_noticia{
+	text-align: justify;
+	font-size: 21px;
+}
+
+.Foto_Cuerpo{
+	width: 404px;
+	float: right;
+}
+
+.Firma_noticias{
+	font-size: 22px;
+	font-weight: lighter;
+}
+
+.EtiqueComentarios{
+	font-weight: bold;
+}
+
+.marginBTNComentario{
+	float: right;
+}
+
+.margenAvatarComent{
+	width: 3%;
+}
+
+.fechaComent{
+	font-weight: lighter;
+}
+
+.linkResponder{
+	color: grey;
+	font-weight: bold;
+}
+
+.anwser{
+	padding: 18px 0;
+	border: 0;
+	  border-bottom-color: currentcolor;
+	  border-bottom-style: none;
+	  border-bottom-width: 0px;
+	border-bottom: 1px solid #0f1011;
+	font-size: 17px;
+	color: #212121;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.margenAvatarRespues{
+	width: 3%;
+}
+
+footer{
+	background: #2F2F2F;
+	padding: 40px 0;
+	text-align: center;
+	margin-top: 40px;
+}
+
+footer .contenedor{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+footer img{
+	margin: 0 40px;
+	transform: rotate(0);
+	transition: .4s;
+}
+
+footer img:hover{
+	transform: rotate(360deg);
+	transition: .4s;
+}
+
+footer p{
+	color: #fff;
+	margin-top: 40px;
+}

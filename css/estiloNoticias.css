@@ -1,0 +1,35 @@
+.margLogo{
+	width: 100%;
+	margin-top: 10px;
+}
+
+.container a{
+	color: #000;
+	text-decoration: none;
+}
+
+.margenEncabezado{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.estilo_linea{
+	color: #ee0606;
+	height: 12px;
+	background-color: #ee0606;
+	margin-bottom: 10px;
+}
+
+.margenCarrusel{
+	width: 100%;
+}
+
+.tamañoimgCarrusel{
+	width: 100%;
+	height: 223px;
+}
+
+.margenAvatar{
+	width: 21%;
+	margin-inline: 10px;
+}

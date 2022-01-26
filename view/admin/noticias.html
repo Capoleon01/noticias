@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<title>Noticias Transportistas</title>
+    <link rel="shortcut icon" href="../../img/icon_Castores.ico"/>
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/estiloNota.css">
+    <link rel="stylesheet" href="../../css/sweetalert.css">
+    <script type="text/javascript" src="../../js/fontawesome.js"></script>
+    <script>
+		window.onload = function ocultar(){
+			document.getElementById('Cargando').style.display = 'none';
+			document.getElementById('CargandoNoticias').style.display = 'none';
+			document.getElementById('CargandoComent').style.display = 'none';
+			document.getElementById('CargandoRespuest').style.display = 'none';
+			document.getElementById('contenedor_respuesta').style.display = 'none';
+			document.getElementById('linksRespuestasOcultar').style.display = 'none';
+			document.getElementById('contenedor_respuesta_contestadas').style.display = 'none';
+		}
+	</script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<div class="row align-items-start">
+				<div class="col">
+					<a href="index.html">
+						<img class="margLogo" src="../../img/Logo_Castores.png">
+					</a>
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Suscriptores
+						</center>
+					</a>
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Boletin informativo
+						</center>
+					</a>
+				</div>
+				<div class="col margenEncabezado">
+					<a href="#">
+						<center>
+							Videos
+						</center>
+					</a>
+				</div>
+				<div class="dropdown col margenEncabezado">
+				  <button class="btn dropdown-toggle " type="button" id="menudesplejable" data-bs-toggle="dropdown" aria-expanded="false">
+					<img class="margenAvatar" src="../../img/avatar_default.png">
+				  </button>
+				  <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="menudesplejable">
+				    <li>Personal</li>
+				    <li>
+				    	<a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#RegistroPersonal" href="#">
+				    		Registrar
+				    	</a>
+				    </li>
+				    <li>
+				    	<a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ActualizacionPersonal" href="#">
+				    		Consulta
+				    	</a>
+				    </li>
+				    <li><hr class="dropdown-divider"></li>
+				    <li>Noticias</li>
+				    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#RegisNoticias">Registrar</a></li>
+				    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#ConsultaNoticias">Consulta</a></li>
+				    <li><hr class="dropdown-divider"></li>
+				    <li>
+						<a class="dropdown-item" href="../../">
+							<button type="button" name="button" class="btn btn-danger margenBTNCS" data-toggle="tooltip" data-placement="right" title="Se cerrara la sesion actual y tendras que logearte de nuevo para entrar">
+								Cerrar Session
+							</button>
+						</a>
+				    </li>
+				  </ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="estilo_linea">
+		<hr>
+	</div>
+	<main>
+		<section id="Encabezado">
+			<div class="container">
+				<p class="Titular_n">Estas son las 5 claves para entender la escalada tensión entre Rusia y Ucrania</p>
+				<p class="Entradilla_n">Según Estados Unidos, hay más de 100 mil soldados de Rusia en las fronteras de Ucrania, lo que hace temer un ataque militar "inminente" en suelo ucraniano</p>
+				<center>
+					<img class="Foto_titular" src="../../img/noticiasT/2022-01-25rusi.jpg">
+				</center>
+				<hr>
+			</div>
+		</section>
+		<section id="Cuerpo">
+			<div class="container">
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="1">
+								<div class="Enca_Otras_historias">
+									<h3 class="Text_Otras_historias">Más Información</h3>
+								</div>
+								<a href="index.html">
+									<img class="Fotos_Otras_historias" src="../../img/noticiasT/2022-01-25periodista.png">
+									<p class="Titular_Otras_historias">
+										Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+									</p>
+								</a>
+								<a href="index.html">
+									<img class="Fotos_Otras_historias" src="../../img/noticiasT/2022-01-25periodista.png">
+									<p class="Titular_Otras_historias">
+										Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+									</p>
+								</a>								
+								<a href="index.html">
+									<img class="Fotos_Otras_historias" src="../../img/noticiasT/2022-01-25periodista.png">
+									<p class="Titular_Otras_historias">
+										Periodistas se manifiestan en Segob; minuto a minuto de las protestas en todo el país 
+									</p>
+								</a>
+							</td>
+							<td colspan="2">
+								<p class="Cuerpo_noticia">
+									 Una eventual invasión militar a Ucrania por parte de Rusia, como lo han advertido las potencias occidentales, mantiene las alarmas encendidas ante el impacto internacional que supondría esta posible acción bélica.
+
+									Moscú niega que tenga intensiones de invadir a Ucrania, aunque ya ha movilizado hasta 100 mil soldados rusos hacia las fronteras con Ucrania, según reportes de inteligencia de Estados Unidos.
+
+									El presidente ruso Vladimir Putin reclama que la OTAN (la alianza militar que lidera Estados Unidos junto a las principales potencias europeas) está expandiéndose hacia los países de Europa del este, incluyendo a Ucrania, lo que considera una "agresión" a la seguridad de Rusia.
+
+									Washington responde que "Rusia pagará un alto precio" si invade a Ucrania y se ha comprometido en respaldar a la exrepública soviética.
+
+									A esto se suma el apoyo de Moscú a rebeldes separatistas en el este del territorio ucraniano, donde más de 14.000 personas han muerto desde 2014 en la llamada guerra del Donbás.
+
+									Pero, ¿qué riesgo real hay de un enfrentamiento armado en la región?
+
+									En este video te explicamos 5 claves de esta escalada de tensiones que reaviva el temor de un conflicto armado de mayor escala en Europa.
+
+									Recuerda que puedes recibir notificaciones de BBC News Mundo. Descarga la última versión de nuestra app y actívalas para no perderte nuestro mejor contenido.
+									<img class="Foto_Cuerpo" src="../../img/noticiasC/2022-01-25rosa.jpg">
+								</p>
+								<p class="Firma_noticias">
+									vare
+								</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr>
+			</div>
+		</section>
+		<section id="ZonaComent">
+			<div class="container-md">
+				<form id="Formulario_Comentar">
+					<div class="mb-3">
+						<label for="ControlComentarios" class="form-label EtiqueComentarios">¡Dinos que cuentas!</label>
+	  					<textarea class="form-control" id="comentario" name="comentario" rows="3" maxlength="255" placeholder="Comentar..."></textarea>
+					</div>
+					<input type="hidden" name="usuarioComent" id="usuarioComent" readonly value="0">
+					<input type="hidden" name="NoticiaComent" id="NoticiaComent" readonly value="0">
+				</form>
+				<div class="marginBTNComentario">
+					<button type="button" class="btn btn-outline-primary" id="BTNComentario" name="BTNComentario">COMENTAR</button>
+					<button class="btn btn-primary" type="button" disabled id="CargandoComent">
+					  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+					  Cargando...
+					</button>
+				</div>
+			</div>
+		</section>
+		<section id="Comentarios">
+			<div class="container">
+				<table>
+					<tbody>
+						<tr>
+							<td colspan="3">
+								<img class="margenAvatar" src="../../img/avatar_defaultash.png">
+								Yael Gutierrez
+								<p>
+									Uriel: “si no te ha ocurrido, no te preocupes en cualquier momento puedes vivir algo que te hará el protagonista de Relatos... de la Noche” 
+									Yo en mi casa: “CÁLLATE EL HOCICOOOOO”'
+								</p>
+								<p class="fechaComent">20/01/2022</p>
+							</td>
+						</tr>			
+						<tr>
+							<td colspan="1">
+								<a class="linkResponder" id="linksResp" name="linksResp">
+									RESPONDER
+								</a>
+								<div id="contenedor_respuesta">
+									<form id="formulario_Respuesta">
+										<textarea class="anwser" id="Respuesta" name="Respuesta" placeholder="Añade una respuesta Publica..."></textarea>
+									</form>
+									<button type="button" class="btn btn-outline-secondary" id="BTNCancelarAnwser" name="BTNCancelarAnwser">CANCELAR</button>
+									<button type="button" class="btn btn-outline-primary" id="BTNResponder" name="BTNResponder">RESPONDER</button>
+									<button class="btn btn-primary" type="button" disabled id="CargandoRespuest">
+									  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+									  Cargando...
+									</button>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="1">
+								<a class="linkRespuestas" id="linksRespuestasMostrar" name="linksRespuestasMostrar">
+									<i class="fas fa-sort-up"></i> Ver Respuestas
+								</a>
+								<a class="linkRespuestas" id="linksRespuestasOcultar" name="linksRespuestasOcultar">
+									<i class="fas fa-sort-down"></i> Ver Respuestas
+								</a>
+								<div id="contenedor_respuesta_contestadas">
+									<img class="margenAvatar" src="../../img/avatar_default.png">
+									MAROS MONTOYA
+									<p class="respuestas_usarios">
+										Y a ti ya t a pasado entonces yael, uriel nada aun
+									</p>
+									<p class="fechaComent">20/01/2022</p>
+								</div>	
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section id="pie">
+			<div class="container">
+	 			<div class="redes">
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/facebook.png" alt="logo de facebook"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/github.png" alt="logo de github"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/linkedin.png" alt="logo de linkedin"></a>
+	 				<a target="_blank" href="https://www.castores.com.mx/"><img src="../../img/medium.png" alt="logo de medium"></a>
+	 			</div>
+				<div class="parrafo">
+				  <p>© 2022 Grupo castores | Todos los derechos reservados.</p>
+				</div>
+			</div>
+		</section>
+	</footer>
+
+	<!-- Modal Inicio de registro personal-->
+	<div class="modal fade" id="RegistroPersonal" tabindex="-1" aria-labelledby="registroPersonal" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="registroPersonal">Registro de personal</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form id="formulario_Registro_Personal">
+	        	<table>
+	        		<tbody>
+	        			<tr>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Nombre</span>
+								  <input type="text" class="form-control" name="nombre" id="nombre" maxlength="30" placeholder="Mariana">
+								</div>
+	        				</td>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Apellido paterno</span>
+								  <input type="text" class="form-control" name="apePaterno" id="apePaterno" maxlength="30" placeholder="Venzon">
+								</div>
+	        				</td>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Apellido materno</span>
+								  <input type="text" class="form-control" name="apeMaterno" id="apeMaterno" maxlength="30" placeholder="Lopez">
+								</div>
+	        				</td>
+	        			</tr>
+        				<tr>
+        					<td>
+				        		<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Direccion</span>
+								  <input type="text" class="form-control" name="direccion" id="direccion" maxlength="60" placeholder="Blvd. Alonzo de Torres">
+								</div>
+        					</td>
+        					<td>
+				        		<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Fecha Ingreso</span>
+								  <input type="date" class="form-control" name="fechaIng" id="fechaIng">
+								</div>
+        					</td>
+        					<td>
+				        		<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Usuario</span>
+								  <input type="text" class="form-control" name="user" id="user" placeholder="mariana">
+								</div>
+        					</td>
+        				</tr>
+        				<tr>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Contraseña</span>
+								  <input type="password" class="form-control" name="password" id="password">
+								</div>
+	        				</td>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Verificacion de Contraseña</span>
+								  <input type="password" class="form-control" name="passwordVerificacion" id="passwordVerificacion">
+								</div>
+	        				</td>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Cargo</span>
+					              <select class="form-select" name="cargo" id="cargo" size="1">
+						              <option value="0">Elige un Cargo</option>
+						              <option value="1">Administrador</option>
+						              <option value="2">Interno</option>
+						              <option value="3">Externo</option>
+						          </select>
+								</div>
+	        				</td>
+        				</tr>
+        				<tr>
+	        				<td>
+					        	<div class="input-group input-group-sm mb-3">
+			  				      <input class="form-control" type="file" id="foto" name="foto" multiple>
+								</div>
+	        				</td>
+        				</tr>
+	        		</tbody>
+	        	</table>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+	        <button type="button" class="btn btn-success" id="BTNRegistrar" name="BTNRegistrar">Registrar</button>
+			<button class="btn btn-success" type="button" disabled id="Cargando">
+			  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+			  Cargando...
+			</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Fin de modal registro de personal -->
+	<!-- Modal Inicion de Actualizacion de Personal-->
+	<div class="modal fade" id="ActualizacionPersonal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="staticBackdropLabel">Consulta Registro del personal</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <table class="table table-striped" width="70%" align="center">
+    			<tr align="center">
+			        <th  scope="col">ID</th>
+			        <th  scope="col">Nombre</th>
+			        <th  scope="col">Apellido Paterno</th>
+			        <th  scope="col">Apellido Materno</th>
+			        <th  scope="col">Dirección</th>
+			        <th  scope="col">Fecha Ingreso</th>
+			        <th  scope="col">Usuario</th>
+			        <th  scope="col">Cargo</th>
+    			</tr>
+    			<tr> 
+		            <td><center>1</center></td>
+		            <td><center>Jorge</center></td> 
+		            <td><center>Lopez</center></td>
+		            <td><center>Martinez</center></td>
+		            <td><center>Blvd.Juan Alonzo de torres</center></td>
+		            <td><center>05/01/2022</center></td>
+		            <td><center>jorge</center></td>  
+		            <td><center>Administrador</center></td>  
+		        </tr>
+    			<tr> 
+		            <td><center>2</center></td>
+		            <td><center>Jorge</center></td> 
+		            <td><center>Lopez</center></td>
+		            <td><center>Martinez</center></td>
+		            <td><center>Blvd.Juan Alonzo de torres</center></td>
+		            <td><center>05/01/2022</center></td>
+		            <td><center>jorge</center></td>  
+		            <td><center>interno</center></td>  
+		        </tr>
+    		</table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Fin de modal de Actualizacion de Personal -->
+	<!-- Modal Inicio de Registro Noticias -->
+	<div class="modal fade" id="RegisNoticias" tabindex="-1" aria-labelledby="RegistroNoticias" aria-hidden="true">
+	  <div class="modal-dialog modal-lg">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="RegistroNoticias">Registro de Noticias</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <form id="Registro_Noticias">
+	        	<table>
+	        		<tbody>
+	        			<tr>
+	        				<td colspan="1">
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Titular</span>
+								  <input type="text" class="form-control" name="titular" id="titular" maxlength="100" placeholder="El titulo de la noticia">
+								</div>
+	        				</td>
+	        				<td colspan="1">
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Clave</span>
+								  <textarea class="form-control" id="clave" name="clave" rows="1" placeholder="Para llamar la atencion de los lectores" maxlength="250"></textarea>
+								</div>
+	        				</td>
+	        				<td colspan="1">
+					     		<label for="fotTitularLabel" class="form-label">Foto del titular</label>
+					        	<div class="input-group input-group-sm mb-3">
+			  				      <input class="form-control" type="file" id="foto_titular" name="foto_titular" multiple>
+								</div>
+	        				</td>
+	        			</tr>
+	        			<tr>
+	        				<td colspan="2">
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Entradilla</span>
+								  <textarea class="form-control" id="Entradilla" name="Entradilla" rows="3" placeholder="Para llamar la atencion de los lectores" maxlength="200"></textarea>
+								</div>
+	        				</td>
+	        				<td colspan="1">
+					     		<label for="fotTitularLabel" class="form-label">Foto del cuerpo</label>
+					        	<div class="input-group input-group-sm mb-3">
+			  				      <input class="form-control" type="file" id="foto_cuerpo" name="foto_cuerpo" multiple>
+								</div>
+	        				</td>
+	        			</tr>
+	        			<tr>
+	        				<td colspan="3">
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Cuerpo</span>
+								  <textarea class="form-control" id="cuerpo" name="cuerpo" rows="4" placeholder="El contenido de la noticia" maxlength="1400"></textarea>
+								</div>
+	        				</td>
+	        			</tr>
+	        			<tr>
+	        				<td colspan="1">
+					        	<div class="input-group input-group-sm mb-3">
+								  <span class="input-group-text" id="inputGroup-sizing-sm">Firma</span>
+								  <input type="text" class="form-control" name="firma" id="firma" maxlength="10" placeholder="Autor de la noticia">
+								  <input type="hidden"  name="userNoti" id="userNoti" value="<?php echo $idUsuario; ?>">
+								</div>
+	        				</td>
+	        			</tr>
+	        		</tbody>
+	        	</table>
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+	        <button type="button" class="btn btn-success" id="BTNRNoticias" name="BTNRNoticias">Registrar</button>
+			<button class="btn btn-success" type="button" disabled id="CargandoNoticias">
+			  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+			  Cargando...
+			</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- fin de modal de registro de noticias -->
+	<!-- Modal Inicio de Actualizacion de Noticias -->
+	<div class="modal fade" id="ConsultaNoticias" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+	  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="staticBackdropLabel">Consulta de Noticias</h5>
+	        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+	      </div>
+	      <div class="modal-body">
+	        <table class="table table-striped" width="70%" align="center">
+    			<tr align="center">
+			        <th  scope="col">ID</th>
+			        <th  scope="col">Titular</th>
+			        <th  scope="col">Clave</th>
+			        <th  scope="col">Entradilla</th>
+			        <th  scope="col">Cuerpo</th>
+			        <th  scope="col">Firma</th>
+			        <th  scope="col">Usuario</th>
+    			</tr>
+				<tr> 
+		            <td><center>3</center></td>
+		            <td><center>Estas son las 5 claves para entender la escalada tensión entre Rusia y Ucrania</center></td>
+		            <td><center>Según Estados Unidos, hay más de 100 mil soldados de Rusia en las fronteras de Ucrania, lo que hace temer un ataque militar "inminente" en suelo ucraniano</center></td>
+		            <td><center>Según Estados Unidos, hay más de 100 mil soldados de Rusia en las fronteras de Ucrania, lo que hace temer un ataque militar "inminente" en suelo ucraniano</center></td>
+		            <td><center> Una eventual invasión militar a Ucrania por parte de Rusia, como lo han advertido las potencias occidentales, mantiene las alarmas encendidas ante el impacto internacional que supondría esta posible acción bélica.
+
+					Moscú niega que tenga intensiones de invadir a Ucrania, aunque ya ha movilizado hasta 100 mil soldados rusos hacia las fronteras con Ucrania, según reportes de inteligencia de Estados Unidos.
+
+					El presidente ruso Vladimir Putin reclama que la OTAN (la alianza militar que lidera Estados Unidos junto a las principales potencias europeas) está expandiéndose hacia los países de Europa del este, incluyendo a Ucrania, lo que considera una "agresión" a la seguridad de Rusia.
+
+					Washington responde que "Rusia pagará un alto precio" si invade a Ucrania y se ha comprometido en respaldar a la exrepública soviética.</center></td>
+		            <td><center>vare</center></td>
+		            <td><center>jorge</center></td>  
+		        </tr>
+    		</table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/jquery-3.6.0.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/bootstrap.bundle.js"></script>
+    <script src="../../js/popper.min.js"></script>
+    <script src="../../js/sweetalert.min.js"></script>
+    <script src="../../js/funcion.js"></script>
+</body>
+</html>
+<?php
+$con->cerrar();
+?>
